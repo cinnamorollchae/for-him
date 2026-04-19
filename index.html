@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, My Love!</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 50px 20px 100px 20px;
+            background: #FDF5E6; /* Cream */
+            text-align: center;
+            color: #4A3C31;
+            font-family: 'Lora', serif;
+            animation: fadeInPage 1.5s ease-in;
+        }
+
+        h1 {
+            font-family: 'Allura', cursive;
+            font-size: 72px;
+            font-weight: normal;
+            margin-bottom: 40px;
+            color: #222;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            max-width: 800px;
+            margin: 0 auto 50px auto;
+        }
+
+        .photo-frame {
+            background: white;
+            padding: 10px 10px 40px 10px;
+            border-radius: 4px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+        }
+
+        .photo-frame img {
+            width: 100%;
+            display: block;
+            border-radius: 2px;
+            object-fit: cover;
+        }
+
+        .photo-43 img { height: 250px; }
+
+        .photo-portrait {
+            grid-column: span 2; 
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .photo-frame:hover { transform: scale(1.02) rotate(-1deg); }
+
+        .audio-section { margin-bottom: 50px; }
+        
+        video {
+            width: 100%;
+            max-width: 550px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            margin-bottom: 80px;
+        }
+
+        /* UPDATED MESSAGE BOX */
+        .love-letter {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 50px 40px;
+            background: rgba(255, 255, 255, 0.6);
+            border-radius: 30px;
+            line-height: 1.8;
+            font-size: 19px;
+            color: #333;
+        }
+
+        .love-letter h2 {
+            font-family: 'Allura', cursive;
+            font-size: 45px;
+            margin-bottom: 20px;
+        }
+
+        .signature {
+            font-family: 'Allura', cursive;
+            font-size: 38px;
+            margin-top: 30px;
+            display: block;
+            color: #222;
+        }
+
+        @keyframes fadeInPage {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 50px; }
+            .gallery { grid-template-columns: 1fr; }
+            .photo-portrait { grid-column: auto; }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>happy birthday, my love ♡</h1>
+
+    <div class="audio-section">
+        <audio controls loop>
+            <source src="22-chorus.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <div class="gallery">
+        <div class="photo-frame photo-43"><img src="photo1.jpg"></div>
+        <div class="photo-frame photo-43"><img src="photo2.jpg"></div>
+        <div class="photo-frame photo-43"><img src="photo3.jpg"></div>
+        <div class="photo-frame photo-43"><img src="photo4.jpg"></div>
+        <div class="photo-frame photo-portrait"><img src="photo5.jpg"></div>
+    </div>
+
+    <video autoplay loop muted playsinline>
+        <source src="boomerang.mp4" type="video/mp4">
+    </video>
+
+    <div class="love-letter">
+        <h2>to my favorite person,</h2>
+        <p>
+            i created this to remind u that even though we are miles apart, 
+            u are always in my heart. from Manila to Singapore, no distance 
+            can change how much you mean to me.
+        </p>
+        <p>
+            here’s to more travels, more adventures, and all the memories we 
+            have yet to make together. i’m so lucky to be yours.
+        </p>
+        <p><strong>i love you more than words can say!</strong></p>
+        <span class="signature">your baby, Vee</span>
+    </div>
+
+</body>
+</html>
